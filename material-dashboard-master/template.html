@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Internship</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Team Myknot
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                  <i class="material-icons">notifications</i> Notifications
+                </a>
+              </li>
+              <!-- your navbar here -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+   <div class="content">
+        <div class="container-fluid" style="padding:50px">
+
+          <div style="display:flex;justify-content:space-between;margin-bottom:50px;">
+            <div style="display:flex;">
+              <h1 style="font-size:20px;font-weight:bold;">Hii&nbsp</h1>
+              <h1 id="name" style="font-weight:bold;font-size:20px;"></h1>
+              <h1 style="font-size:large;">,&nbspWelcome back!</h1>
+            </div>
+            <div style="display:flex; background:blue;height:70px;border-radius:5%;width:170px;padding:10px;box-shadow:5px 5px 20px rgb(168, 167, 167);">
+              <div style="width:30%"><i class="fab fa-telegram-plane" style="font-size: 45px; color:white;"></i>
+              </div>
+                  <div style="width:70%">
+                    <h1 style="font-weight:bold;font-size:small;color:white;padding:5px;">Create A New<br>Signing request</h1>
+                  </div>
+                    </div>
+                  </div>
+                 <h1 style="font-size: medium;margin-bottom:20px;">Your Dashboard</h1>
+                  <div class="block" style="display:flex; justify-content: space-around;margin-bottom:50px;">
+              
+                    <div class="block-div"
+                      style="display:flex;height:100px;width:170px;font-weight:bold; border-radius:5%;padding:15px;color:white; background:yellow;box-shadow:5px 5px 20px rgb(168, 167, 167);">
+                      <div style="width:40%;"><i class="far fa-clock" style="font-size:40px;"> </i></div>
+                      <div style="width:60%;">In Progress<br>Orders<br><p id="inProgress"></p></div>
+                    </div>
+                    <div class="block-div"
+                      style="display:flex;height:100px;width:170px;font-weight:bold;border-radius:5%;padding:15px;color:white; background:blue;box-shadow:5px 5px 20px rgb(168, 167, 167);">
+                      <div style="width:35%;"><i class="far fa-calendar-alt" style="font-size:40px;"> </i></div>
+                      <div style="width:65%;">Today's <br>Appointments<br>
+                      <p id="appointment"></p></div>
+                    </div>
+                    <div class="block-div"
+                      style="display:flex;height:100px;width:170px;font-weight:bold;border-radius:5%;padding:15px;color:white; background:#fa7132;box-shadow:5px 5px 20px rgb(168, 167, 167);">
+                      <div style="width:40%;"><i class="fas fa-tasks" style="font-size:40px;"> </i></div>
+                      <div style="width:60%;">Completed <br>Orders<br>
+                      <p id="totalOrder"></p></div>
+                    </div>
+                  </div>
+
+                <div style="border:1px solid rgb(167, 166, 166);border-radius:5px;padding:10px 0px">
+                  <h1 style="font-size: medium;font-weight:bold;color:gray;padding-left:20px;">⏱ Today's Appointment</h1>
+
+                  <table id="table-data" style="width:100%; text-align:center;">
+                    <tr style="border-bottom: 1px solid rgb(167, 166, 166);">
+                      <th style="color:blue;">#Escrow No</th>
+                      <th style="color:blue;">Property Address</th>
+                      <th style="color:blue;">Assigned Notary</th>
+                      <th style="color:blue;">Signing Details and Time</th>
+                    </tr>
+                    
+                  </table>
+                </div>
+     
+
+
+
+
+                </div>
+     </div>
+
+
+
+
+
+  </div>
+
+
+            <footer class="footer">
+              <div class="container-fluid">
+                <nav class="float-left">
+                  <ul>
+                    <li>
+                      <a href="https://www.creative-tim.com">
+                        Creative Tim
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="copyright float-right">
+                  &copy;
+
+                  <script src="https://code.jquery.com/jquery-3.5.1.js"
+                    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+                  <script>
+
+                    $.post('https://my-notary-app.herokuapp.com/getCustomerDashboard', {
+                      customerId: "6027b462059a1100152ef4db"
+                    }, function (result) {
+                      console.log(result)
+                      var completedOrders=result.completedOrders.length;
+                      var inProgress=result.inProgressOrders.length;
+                      document.getElementById("name").innerHTML=result.customer.firstName;
+                      document.getElementById("inProgress").innerHTML=inProgress;
+                      document.getElementById("totalOrder").innerHTML=completedOrders;
+                      document.getElementById("appointment").innerHTML=inProgress;
+
+                      for(var i=0;i<result.inProgressOrders.length;i++){
+                        var row = document.createElement("tr");
+                          var cell1= document.createElement("td");
+                          var textnode1=document.createTextNode("#8234"+i)
+                          cell1.appendChild(textnode1);
+                          row.appendChild(cell1);
+                          var cell2= document.createElement("td");
+                          var textnode2=document.createTextNode(result.inProgressOrders[i].appointment.placeId)
+                          cell2.appendChild(textnode2);
+                          row.appendChild(cell2);
+                          if(result.inProgressOrders[i].assignedToNotary){
+                            var cell3= document.createElement("td");
+                            var textnode3=document.createTextNode(result.inProgressOrders[i].assignedToNotary.firstName)
+                          cell3.appendChild(textnode3);
+                          row.appendChild(cell3);
+                          }else{
+                            var cell3= document.createElement("td");
+                            var textnode3=document.createTextNode("undefined")
+                            cell3.appendChild(textnode3);
+                            row.appendChild(cell3);
+                          }
+                          var cell4= document.createElement("td");
+                          var textnode4=document.createTextNode(result.inProgressOrders[i].createdAt)
+                          cell4.appendChild(textnode4)
+                          row.appendChild(cell4);
+                          document.getElementById("table-data").appendChild(row);
+      
+                         
+                      }
+                      
+                    });
+
+                    document.write(new Date().getFullYear())
+                  </script>, made with <i class="material-icons">favorite</i> by
+                  <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                </div>
+                <!-- your footer here -->
+              </div>
+            </footer>
+          </div>
+        </div>
+</body>
+
+</html>
