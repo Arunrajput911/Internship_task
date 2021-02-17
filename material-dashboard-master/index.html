@@ -15,6 +15,11 @@
   <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+      table tr{
+        border-bottom: 1px solid rgb(167, 166, 166);
+      }
+    </style>
 </head>
 <body>
   <div class="wrapper ">
@@ -89,7 +94,7 @@
                   <div class="block" style="display:flex; justify-content: space-around;margin-bottom:50px;">
               
                     <div class="block-div"
-                      style="display:flex;height:100px;width:170px;font-weight:bold; border-radius:5%;padding:15px;color:white; background:yellow;box-shadow:5px 5px 20px rgb(168, 167, 167);">
+                      style="display:flex;height:100px;width:170px;font-weight:bold; border-radius:5%;padding:15px;color:white; background:rgba(240, 240, 3, 0.877);box-shadow:5px 5px 20px rgb(168, 167, 167);">
                       <div style="width:40%;"><i class="far fa-clock" style="font-size:40px;"> </i></div>
                       <div style="width:60%;">In Progress<br>Orders<br><p id="inProgress"></p></div>
                     </div>
@@ -111,7 +116,7 @@
                   <h1 style="font-size: medium;font-weight:bold;color:gray;padding-left:20px;">⏱ Today's Appointment</h1>
 
                   <table id="table-data" style="width:100%; text-align:center;">
-                    <tr style="border-bottom: 1px solid rgb(167, 166, 166);">
+                    <tr>
                       <th style="color:blue;">#Escrow No</th>
                       <th style="color:blue;">Property Address</th>
                       <th style="color:blue;">Assigned Notary</th>
