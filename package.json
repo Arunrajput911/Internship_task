@@ -1,0 +1,25 @@
+{
+  "name": "internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel material-dashboard-master/index.html",
+    "build": "parcel build material-dashboard-master/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arunrajput911/Internship_task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arunrajput911/Internship_task/issues"
+  },
+  "homepage": "https://github.com/Arunrajput911/Internship_task#readme",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
